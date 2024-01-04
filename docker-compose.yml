@@ -1,0 +1,19 @@
+version: '3.5'
+ 
+services:
+  mysql:
+    image: mysql:5.7
+    container_name: db_setup_laravel
+    ports:
+      - "3305:3306"
+    volumes:
+      - database:/var/lib/mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: "root"
+      MYSQL_DATABASE: "db_setup_laravel"
+ 
+volumes:
+  database:
+  esdata:
+    driver: local
