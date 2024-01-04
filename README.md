@@ -27,7 +27,7 @@ volumes:
 
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
-DB_PORT=3306
+DB_PORT=3305
 DB_DATABASE=db_setup_laravel
 DB_USERNAME=root
 DB_PASSWORD=root
